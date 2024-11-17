@@ -4,9 +4,9 @@ import joblib
 
 # Load saved models
 model_paths = {
-    "Logistic Regression": "Training\Models\Logistic_Regression.joblib",
-    "Random Forest": "Training\Models\Random_Forest.joblib",
-    "XGBoost": "Training\Models\XGBoost.joblib"
+    "Logistic Regression": "/Training/Models/Logistic_Regression.joblib",
+    "Random Forest": "/Training/Models/Random_Forest.joblib",
+    "XGBoost": "/Training/Models/XGBoost.joblib"
 }
 models = {name: joblib.load(path) for name, path in model_paths.items()}
 
